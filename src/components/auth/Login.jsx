@@ -38,7 +38,7 @@ const Login = () => {
             });
             if (res.data.success) {
                 dispatch(setUser(res.data.user));
-                navigate("/");
+                navigate("/dashboard");
                 toast.success(res.data.message);
             }
         } catch (error) {
@@ -50,7 +50,7 @@ const Login = () => {
     }
     useEffect(()=>{
         if(user){
-            navigate("/");
+            navigate("/dashboard");
         }
     },[])
     return (
