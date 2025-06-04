@@ -18,7 +18,7 @@ import ProtectedRoute from './components/admin/ProtectedRoute'
 
 const appRouter = createBrowserRouter([
   {
-    path: '/dashboard',
+    path: '/',
     element: <Home />
   },
   {
