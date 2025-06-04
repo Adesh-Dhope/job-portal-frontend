@@ -38,7 +38,7 @@ const Login = () => {
             });
             if (res.data.success) {
                 dispatch(setUser(res.data.user));
-                navigate("/dashboard");
+                navigate("/");
                 toast.success(res.data.message);
             }
         } catch (error) {
